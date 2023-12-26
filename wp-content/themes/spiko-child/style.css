@@ -1,0 +1,1519 @@
+    /*
+Theme Name: spiko-child
+Author: shagun sharma
+Description: This is a child of spiko
+Version: 1.0
+Template: spiko
+
+This is the child theme for Spiko theme, generated with Generate Child Theme plugin by catchthemes.
+
+(optional values you can add: Theme URI, Author URI, License, License URI, Tags, Text Domain)
+*/
+
+    @font-face {
+        src: url('fonts/LibreBaskerville-Regular.ttf');
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+    }
+
+    @font-face {
+        src: url('fonts/LibreBaskerville-Bold.ttf');
+        font-family: 'Libre Baskerville';
+        font-weight: 700;
+    }
+
+    @font-face {
+        src: url('fonts/Syne-Regular.ttf');
+        font-family: 'Syne';
+        font-weight: 400;
+    }
+
+    @font-face {
+        src: url('fonts/Syne-Medium.ttf');
+        font-family: 'Syne';
+        font-weight: 500;
+    }
+
+    @font-face {
+        src: url('fonts/Syne-SemiBold.ttf');
+        font-family: 'Syne';
+        font-weight: 600;
+    }
+
+    @font-face {
+        src: url('fonts/Syne-ExtraBold.ttf');
+        font-family: 'Syne';
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "EkTuhiUniBaani";
+        font-style: normal;
+        font-weight: normal;
+        src: url("fonts/ektuhiunibaani2.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'Gurmukhi';
+        font-weight: normal;
+        src: url("fonts/gurmukhi.TTF") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'Raavi';
+        font-weight: normal;
+        src: url("fonts/raavi_font.woff") format("woff");
+    }
+
+    * {
+        font-family: 'Syne';
+        text-decoration: none !important;
+        outline: none !important;
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Libre Baskerville';
+    }
+
+    .contaniner {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-custom {
+        position: sticky;
+        top: 0px;
+        left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(22px);
+        z-index: 9999;
+        transition: .4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #FF9900;
+        background: #FF9900;
+    }
+
+    .navbar-custom.fixed {
+        top: 0;
+    }
+
+    .custom-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 40px;
+        align-items: center;
+    }
+
+    .menu-text {
+        color: #000;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .navbar .nav .nav-item.active .nav-link {
+        color: #000 !important;
+        background-color: transparent;
+    }
+
+    .navbar ul li a .menu-text:hover:after,
+    .navbar .nav li.active .nav-link .menu-text:after,
+    .navbar-nav .show .dropdown-menu>.active>.menu-text:after,
+    .navbar-nav .show .dropdown-menu>.active>.menu-text:focus {
+        background: #FF9900;
+    }
+
+    .main-inner-home {
+        margin: 0px;
+        padding: 0px;
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 60px 40px;
+    }
+
+    .bck-blk {
+        background-color:  transparent;
+        border: 1px solid #fff !important;
+    }
+    .bck-blk .navbar-toggler-icon
+    {
+        background-image: url('./img/bars.svg');
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #000;
+        font-weight: 600;
+        padding-bottom: 0px;
+    }
+
+    .navbar-dark .navbar-nav .menu-item {
+        margin-right: 15px;
+    }
+
+    .custom .nav-item:not(.menu-item) {
+        display: none;
+    }
+    .navbar-nav .sub-arrow::before
+    {
+        color: #000;
+    }
+
+    .navbar-dark .navbar-nav .menu-item:last-child {
+        margin-right: 0px;
+    }
+
+    .banner-content {
+        width: 50%;
+        background-color: #000000b0;
+        padding: 38px;
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .banner-content p {
+        color: #fff !important;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .banner-heading {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
+    .download-ist-heading {
+        font-weight: 700;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .download-para {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .download-our {
+        display: flex;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #000000;
+        backdrop-filter: blur(4px);
+        padding: 30px 51px;
+        border-radius: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .download-our .update-img a {
+        display: inline-block;
+    }
+
+    /* start who we section */
+
+    .who-we {
+        background: linear-gradient(90.53deg, #FFD4A9 -0.64%, #FFC49A 107.62%);
+        padding: 84px 0;
+        transition: .4s ease;
+    }
+
+    .who-we-heading {
+        font-weight: 700;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .who-we-para {
+        font-weight: 700;
+        font-size: 15px;
+        color: #000;
+        padding-top: 10px;
+    }
+
+    /* end who we section */
+    /* start about us section */
+
+    .content-heading {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .about-us-full-page {
+        background: #FFF8F1;
+    }
+
+    .about-para {
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .about-text {
+        padding: 70px 53px;
+    }
+
+    .about-us-img {
+        margin-top: -130px;
+        height: 530px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    /* end about us section */
+    /* start our mission */
+
+    .mission-text {
+        padding: 40px 30px 14px 31px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 6px #9b9ba0;
+        margin-top: 85px;
+        margin-left: 18px;
+    }
+
+    .site-info {
+        background: transparent !important;
+    }
+
+    /* end our mission */
+    /* log in section start  */
+
+    .um-field-error {
+        background: #ff6363 !important;
+    }
+
+    .um-field-arrow {
+        color: #ff6363 !important;
+    }
+
+    .login-body {
+        min-height: calc(100vh - 158px);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        /* padding-top: 135px; */
+        background: linear-gradient(45deg, #ffddb5, #fff8c1);
+    }
+
+    .login-body .um.um-login,
+    .login-body .um.um-register,
+    .login-body .um.um-password,
+    .login-body .um.um-account {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        background: #ffff;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 0 !important;
+        border: 1px solid #ffbc87;
+        box-shadow: 0 0 20px 0px rgb(255 145 0 / 26%);
+    }
+
+    .login-body .um.um-account {
+        max-width: 1200px;
+    }
+    .login-body .um.um-account .um-account-nav a
+    {
+        padding: 0px 40px;
+        font-family: 'Syne' !important;
+        color: #f99600 !important;
+    }
+    .login-body .um.um-account .um-account-nav a.current
+    {
+        background: #f99600;
+        font-weight: 400 !important;
+        color: #fff !important;
+    }
+    .login-body .um.um-account .um-account-side li a
+    {
+        padding: 10px 7px;
+        background: #fff !important;
+        border-bottom: 1px solid #ccc !important;
+    }
+    .login-body .um.um-account .um-account-side li a.current
+    {
+        background: #f99600 !important;
+        color: #fff !important;
+        border-bottom: 1px solid #f99600 !important;
+    }
+    .login-body .um.um-account .um-account-side li a.current *
+    {
+        color: #fff !important;
+    }
+    .login-body .um.um-account .um-account-side li a.current span.um-account-icon
+    {
+        border-right: 1px solid #fff;
+    }
+    .login-body .um.um-account .um-account-side li a span.um-account-arrow
+    {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .login-body .um-tip.um-tip-w
+    {
+        color: #f99600;
+    }
+    .login-body .um-tip.um-tip-w:hover
+    {
+        color: #f99600;
+    }
+    .login-body .um-tip.um-tip-w i
+    {
+        font-size: 16px;
+    }
+    .login-body .um .um-field-radio.active:not(.um-field-radio-state-disabled) i
+    {
+        color: #f99600;
+    }
+    .login-body .um.um-account .um-account-nav span.ico
+    {
+        left: 13px;
+    }
+    .login-body .um.um-account .um-account-nav span.arr
+    {
+        right: 13px;
+    }
+    .um-account-heading {
+        font-family: 'Libre Baskerville';
+    }
+
+    .um-account-side li a span.um-account-title {
+        font-weight: 500;
+    }
+
+    .login-body .um-col-alt .um-left.um-half {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .login-body .um-center input {
+        max-width: 300px;
+        font-family: 'Syne' !important;
+        width: 100%;
+        background: #F37628 !important;
+        border: 1px solid #F37628 !important;
+        color: #fff;
+        border-radius: 40px !important;
+        transition: .4s ease;
+    }
+
+    .login-body .um-center input:hover {
+        background: transparent !important;
+        color: #F37628;
+    }
+
+    .login-body .um-left.um-half input {
+        max-width: 300px;
+        font-family: 'Syne' !important;
+        width: 100%;
+        background: #F37628 !important;
+        border: 1px solid #F37628 !important;
+        color: #fff;
+        border-radius: 40px !important;
+        transition: .4s ease;
+    }
+
+    .login-body .um-left.um-half input:hover {
+        background: transparent !important;
+        color: #F37628;
+    }
+
+    .login-body .um-right.um-half {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .login-body .um-right.um-half a {
+        background: transparent !important;
+        box-shadow: none !important;
+        width: auto !important;
+        display: inline-block !important;
+    }
+
+    .login-body .um-right.um-half a:hover {
+        color: #0984e3;
+    }
+
+    .um.um-account input[type=submit].um-button {
+        max-width: 300px;
+        font-family: 'Syne' !important;
+        width: 100%;
+        background: #F37628 !important;
+        border: 1px solid #F37628 !important;
+        color: #fff;
+        border-radius: 40px !important;
+        transition: .4s ease;
+    }
+
+    .um-account-name a {
+        font-family: 'Libre Baskerville';
+    }
+
+    .um-account-profile-link a {
+        font-family: 'Syne';
+    }
+
+    .um.um-account input[type=submit].um-button:hover {
+        background: transparent !important;
+        color: #F37628;
+    }
+
+    .um-request-button {
+        background: #F37628 !important;
+    }
+
+    /* end log in section */
+
+    .inner_book {
+        background: rgba(255, 233, 201, 1);
+        border: 3px solid #FF9900;
+        box-shadow: 0px 6px 18px rgba(255, 168, 0, 0.12);
+        padding: 0 80px;
+        border-radius: 27px;
+        position: relative;
+    }
+
+    #book {
+        max-width: 1023px !important;
+        width: 100% !important;
+        height: 700px !important;
+        overflow: hidden !important;
+
+    }
+
+    .inner_section {
+        padding-top: 135px;
+        padding-bottom: 124px;
+        transition: .4s ease;
+    }
+    .inner_section.penti_sec
+    {
+        padding-top: 40px;
+    }
+
+    /* .inner_section.fixed
+{
+    padding-top: 135px;
+} */
+    .book_section {
+        position: relative;
+        background: #FFF8F1;
+        padding-top: 0;
+        padding-bottom: 6px;
+    }
+
+    .sikh_img {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1431;
+    }
+
+    .book_controls {
+        background: #FFF8F1;
+        padding-top: 24px;
+    }
+
+    #controls {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        padding-bottom: 15px;
+        position: relative;
+    }
+
+    #controls label {
+        margin-bottom: 0px;
+        font-family: "EkTuhiUniBaani";
+    }
+
+    #page-number {
+        width: 75px;
+        height: 34px;
+        margin-left: 13px;
+        border: 1px solid #CACACA;
+        background: #FFFFFF;
+        border-radius: 4px;
+        margin-right: 13px;
+    }
+
+    #number-pages {
+        margin-left: 6px;
+    }
+
+    #controls .page_nav {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ff942b;
+        border-color: #ff942b;
+        border-radius: 2px;
+        font-size: 15px !important;
+        color: #fff;
+    }
+
+    .data h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        font-family: 'EkTuhiUniBaani';
+
+        color: #000000;
+    }
+
+    .data p {
+        color: #000000;
+    }
+
+    #book .turn-page {
+        background-color: white;
+        z-index: 1432;
+    }
+
+    .inner_book div.turn-page-wrapper {
+        position: absolute !important;
+        width: 100% !important;
+        overflow: visible !important;
+    }
+
+    #book .cover {
+        background: #faf0e6;
+    }
+
+    .prev-page {
+        margin-left: 20px;
+        margin-right: 2px;
+    }
+
+    #book .cover h1 {
+        color: #990099;
+        text-align: center;
+        font-size: 50px;
+        line-height: 500px;
+        margin: 0px;
+    }
+
+    #book .loader {
+        background-image: url(loader.gif);
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        top: 238px;
+        left: 188px;
+    }
+
+    #book .data {
+        text-align: center;
+        font-size: 18px;
+        color: #990099;
+        padding: 50px;
+        line-height: 2em;
+        font-family: EkTuhiUniBaani;
+    }
+
+
+    #header {
+        position: absolute;
+        left: 38px;
+        z-index: 11111;
+        top: 20px;
+
+    }
+
+    #header img {
+        width: 100px;
+
+    }
+
+
+    #book .odd {
+        background-image: -webkit-linear-gradient(left, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -moz-linear-gradient(left, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -o-linear-gradient(left, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -ms-linear-gradient(left, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+
+    }
+
+    #book .even {
+        background-image: -webkit-linear-gradient(right, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -moz-linear-gradient(right, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -o-linear-gradient(right, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+        background-image: -ms-linear-gradient(right, rgba(255, 233, 201, 1)100%, rgba(255, 233, 201, 0.38) 100%);
+    }
+
+    .book_tabs {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #B0ADAD;
+    }
+
+    .book_btn {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 64px;
+        height: 64px;
+        background: #FFFFFF;
+        border: 1px solid #B0ADAD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        color: #F37628;
+        font-size: 30px;
+        padding: 0;
+        z-index: 9997;
+    }
+
+    .book-page-popup {
+        position: fixed;
+        width: 397px;
+        height: 482px;
+        top: 50%;
+        right: 10px;
+        padding: 21px 14px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: translateY(-50%) scale(0);
+        background: #FFFFFF;
+        border: 1px solid #B0ADAD;
+        border-radius: 8px;
+        transition: .4s ease;
+        z-index: 9999;
+    }
+
+    .book-page-popup.active {
+        transform: translateY(-50%) scale(1);
+    }
+
+    .popup-bar {
+        position: sticky;
+        top: -21px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tab_link {
+        font-family: 'Syne';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+    }
+
+    .tab_link.active {
+        padding: 2px 13px;
+        color: #fff !important;
+        background: #F37628;
+        border-radius: 4px;
+    }
+
+    .close_book_popup {
+        font-size: 12px;
+        color: #F37628;
+        cursor: pointer;
+    }
+
+    .read_ind {
+        width: 8px;
+        height: 8px;
+        background: #720172;
+        margin-right: 2px;
+    }
+
+    .unread_ind {
+        width: 8px;
+        height: 8px;
+        background: #EBEBEB;
+        border: 1px solid #DEDEDE;
+        margin-right: 2px;
+    }
+
+    .book-list {
+        margin-right: 44px;
+    }
+
+    .page_list_item {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 9px;
+    }
+
+    .page_link {
+        width: 48px;
+        height: 36px;
+        background: #EBEBEB;
+        border: 1px solid #DEDEDE;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Syne';
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    .read_page.page_link {
+        background: #720172;
+        color: #FFFFFF;
+    }
+
+    .mark_read {
+        border: none;
+        border-radius: 2px;
+        background: #F37628;
+        border: 1px solid #F37628 !important;
+        color: #fff;
+        padding: 5px 12px;
+        font-size: 15px;
+        margin-left: 10px;
+        transition: .4s ease;
+    }
+
+    .mark_read:hover {
+        background: transparent;
+        color: #F37628;
+    }
+
+    .penti_sec {
+        background: #FFF8F1;
+    }
+
+    .penti_head {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .penti_head span {
+        font-family: 'EkTuhiBaani';
+    }
+
+    .penti_text {
+        font-family: 'Syne';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    .penti_listing {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .penti_card {
+        width: 90px;
+        position: relative;
+        padding: 5px 7px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 5px;
+        margin-right: 6px;
+        margin-bottom: 7px;
+        box-sizing: border-box;
+    }
+
+    .alphabet {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: #000000;
+    }
+
+    .alpha_text {
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 5px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .alpha_eng {
+        font-weight: 400;
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 0px;
+        color: #000000;
+    }
+
+    .speak_btn {
+        position: absolute;
+        top: 6px;
+        right: 7px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #F37628;
+        border: none;
+        font-size: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .vowel_sec {
+        background: #fff;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pl-34 {
+        padding-left: 34px !important;
+    }
+
+    .nasal_sec {
+        background: #FFF8F1;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .controls_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .turn-page-wrapper p {
+        font-family: 'EkTuhiUniBaani';
+    }
+
+    /* start media query section */
+    /* top bar start */
+    .top_bar {
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        left: 0;
+        justify-content: space-between;
+        z-index: 999;
+        /* background: #fff; */
+        padding: 3px 20px;
+        transition: .4s ease;
+    }
+
+    .inner-top {
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+
+    .social_list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        margin-left: 17px;
+    }
+
+    .social_item {
+        margin: 0 6px;
+    }
+
+    .social_link {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .social_link:hover {
+        color: #fff;
+    }
+
+    .social_link.facebook {
+        background: #1877F2;
+    }
+
+    .social_link.twitter {
+        background: #1DA1F2;
+    }
+
+    .social_link.instagram {
+        background: #E4405F;
+    }
+
+    .social_link.whatsapp {
+        background: #25D366;
+    }
+
+    .social_link.email {
+        background: #414141;
+    }
+
+    .footer_social_links {
+        width: 100%;
+
+    }
+
+    .coppyright_text {
+        padding: 8px 0;
+    }
+    .site-info .copyright{
+        padding-bottom: 0px;
+    }
+
+    .top_bar.fixed {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* top bar end */
+    .article_section
+    {
+        padding: 8em 0;
+    }
+    .inner_article 
+    {
+        padding: 51px 47px;
+        border: 2px solid #ff942b;
+        border-radius: 30px;
+        background: rgba(255, 233, 201, 1);
+        min-height: 500px;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .inner_article .top
+    {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 96%;
+        height: 50px;
+        transform: translateX(-50%);
+        background-image: url(https://gurubani.azurewebsites.net/wp-content/uploads/2022/03/khanda-orange.svg);
+        z-index: -1;
+        background-size: 29px;
+        background-position: inherit;
+        opacity: .5;
+    }
+    .inner_article .top
+    {
+        position: absolute;
+        top: 17px;
+        left: 50%;
+        width: 96%;
+        height: 27px;
+        transform: translateX(-50%);
+        background-image: url(https://gurubani.azurewebsites.net/wp-content/uploads/2022/03/khanda-orange.svg);
+        z-index: -1;
+        background-size: 29px;
+        background-position: inherit;
+        opacity: .5;
+    }
+    .inner_article .left
+    {
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        width: 27px;
+        height: 88%;
+        transform: translateY(-50%);
+        background-image: url(https://gurubani.azurewebsites.net/wp-content/uploads/2022/03/khanda-orange.svg);
+        z-index: -1;
+        background-size: 29px;
+        background-position: inherit;
+        opacity: .5;
+    }
+    .inner_article .right
+    {
+        position: absolute;
+        top: 50%;
+        right: 17px;
+        width: 27px;
+        height: 88%;
+        transform: translateY(-50%);
+        background-image: url(https://gurubani.azurewebsites.net/wp-content/uploads/2022/03/khanda-orange.svg);
+        z-index: -1;
+        background-size: 29px;
+        background-position: inherit;
+        opacity: .5;
+    }
+    .inner_article .bottom
+    {
+        position: absolute;
+        bottom: 17px;
+        left: 50%;
+        width: 96%;
+        height: 27px;
+        transform: translateX(-50%);
+        background-image: url(https://gurubani.azurewebsites.net/wp-content/uploads/2022/03/khanda-orange.svg);
+        z-index: -1;
+        background-size: 29px;
+        background-position: inherit;
+        opacity: .5;
+    }
+    .article_slide
+    {
+        background: rgba(255, 233, 201, 1);
+        padding: 20px 25px;
+    }
+    .main_heading_article
+    {
+        font-family: 'EkTuhiUniBaani';
+        font-size: 23px;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        line-height: 37px;
+        margin-bottom: 12px;
+    }
+    .content_article 
+    {
+        font-family: 'EkTuhiUniBaani';
+        text-align: center;
+        color: #000;
+        font-size: 0.938rem;
+        line-height: 32px;
+    }
+    .inner_article .slick-prev, .inner_article .slick-next 
+    {
+        position: absolute;
+        top: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 7px 14px;
+        background: #ff942b;
+        border-color: #ff942b;
+    }
+    .inner_article .slick-prev:hover, .inner_article .slick-next:hover,
+    .inner_article .slick-prev:focus, .inner_article .slick-next:focus
+    {
+        color: #fff;
+    }
+    .inner_article .slick-disabled
+    {
+        background-color: #ccc;
+        border-color: #ccc;
+    }
+    .inner_article .slick-prev
+    {   
+        left: 47%;
+    }
+    .inner_article .slick-next
+    {
+        left: 53%;
+    }
+    .slider_input
+    {
+        position: absolute;
+        top: -77px;
+        left: 64%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+    }
+    .pos-rel
+    {
+        position: relative;
+    }
+    .slider_input input
+    {
+        padding: 7px 14px;
+        width: 130px;
+        margin-right: 10px;
+    }
+    .slider_input input::-webkit-outer-spin-button,
+    .slider_input input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .slider_input input[type=number] {
+      -moz-appearance: textfield;
+    }
+    .slider_input input::placeholder
+    {
+        font-family: "EkTuhiUniBaani";
+    }
+    .no_pages
+    {
+        font-size: 19px;
+    }
+    .search_field
+    {
+        background: #fff !important;
+        border: none !important;
+        font-family: 'Gurmukhi';
+        font-size: 22px !important;
+        padding: 13px !important;
+    }
+    .search_field:focus
+    {
+        box-shadow: none !important;
+    }
+    .search_btn
+    {
+        background: #fff;
+        border: none !important;
+    }
+    .search_btn:focus
+    {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    .search_btn:hover
+    {
+        box-shadow: none !important;
+    }
+    .search_appear
+    {
+        font-size: 15px;
+        color: #333;
+    }
+    .search_result_container .search_result
+    {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .search_result_container .search_result:last-child
+    {
+        border-bottom: none;
+    }
+    .result_highlight
+    {
+        color: #f90;
+        font-weight: 600;
+    }
+    .search_result h3
+    {
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .date_box
+    {
+        border-bottom: 1px solid #fff;
+        margin-bottom: 40px;
+    }
+    .today_date
+    {
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+        font-size: 20px !important; 
+        color: #fff;
+    }
+    .today_date_punjabi
+    {
+        font-family: 'Gurmukhi';
+        font-size: 20px !important;
+        color: #fff;
+    }
+    .hukumnama_box
+    {
+        padding: 30px 50px;
+        border: 1px solid #f90;
+        background: #ff8c39;
+        border-radius: 30px;
+        box-shadow: 0px 6px 11px rgba(0, 0, 0 , .28);
+    }
+    .jug_head
+    {
+        font-family: 'Gurmukhi';
+        font-size: 39px !important;
+        text-align: center;
+    }
+    .head_1
+    {
+        font-family: 'Gurmukhi';
+        font-size: 39px !important;
+        text-align: center;
+    }
+    .head_today
+    {
+        font-family: 'Gurmukhi';
+        font-size: 59px !important;
+        text-align: center;
+        color: #ffe200;
+        font-weight: 600;
+    }
+    .hukumnama_text 
+    {
+        font-family: 'Gurmukhi';
+        font-size: 35px !important;
+        text-align: center;
+        color: #fff;
+    }
+    .meaning_punjabi
+    {
+        font-family: 'EkTuhiUniBaani';
+        font-size: 23px !important;
+        color: #000;
+    }
+    .meaning_punjabi span
+    {
+        font-family: 'EkTuhiUniBaani';
+    }
+    .meaning_english
+    {
+        font-size: 22px !important;
+        color: #000;
+    }
+    .meaning_english span
+    {
+        font-family: 'Syne';
+    }
+    .gurbani_container
+    {
+        display: none;
+    }
+    .gurbani_container a
+    {
+        display: block;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    @media (max-width: 992px) {
+
+        /* ist page @media start */
+        .banner-content {
+            width: 100%;
+        }
+
+        /* end @media ist page */
+        .about-us-img {
+            height: auto;
+        }
+
+        .inner_book {
+            padding: 40px;
+        }
+
+        #book .data {
+            padding: 0px;
+        }
+
+        .book-page-popup {
+            height: 350px;
+        }
+
+        .download-our {
+            display: block;
+        }
+        #navbarNavDropdown {
+            position: absolute;
+            top: 62px;
+            width: 96%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 29px;
+            border-radius: 0px 0px 24px 24px;
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(22px);
+        }
+        .navbar-custom.custom
+        {
+            justify-content: end;
+            padding-right: 30px;
+        }
+        .article_section
+        {
+            padding: 4em 0;
+        }
+        .inner_article .slick-next
+        {
+            left: 54%;
+        }
+        .inner_article .slick-prev, .inner_article .slick-next
+        {
+            top: -106px;
+        }
+        .slider_input
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translateX(0);
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .book-page-popup {
+            max-width: 336px;
+            width: 100%;
+        }
+
+        .book_btn {
+            width: 43px;
+            height: 43px;
+            font-size: 19px;
+        }
+
+        #controls {
+            display: block;
+            text-align: center;
+        }
+
+        .controls_center {
+            margin-bottom: 10px;
+        }
+
+        .main-inner-home {
+            padding: 50px 14px;
+        }
+
+        .download-our {
+            padding: 30px 23px;
+        }
+
+        .banner-content {
+            padding: 38px 23px;
+            border-radius: 20px;
+        }
+
+        .custom-logo {
+            width: 120px !important;
+        }
+        .bck-blk:focus {
+            color: rgba(255, 255, 255, .5) !important;
+            background: #000 !important;
+        }
+
+        .page_item {
+            margin-bottom: 0px;
+        }
+
+        #book {
+            height: 1000px !important;
+        }
+
+        .sikh_img {
+            width: 266px;
+        }
+
+        .site-footer .custom-container {
+            padding: 0 20px;
+        }
+
+        .footer_social_links {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .social_link {
+            width: 35px;
+            height: 35px;
+            font-size: 17px;
+        }
+
+        .coppyright_text {
+            max-width: 100%;
+        }
+        .inner_article .slick-next
+        {
+            left: 64%;
+        }
+        .about-us-img {
+            width: 400px;
+        }
+        .our-mission-img
+        {
+            width: 100%;
+        }
+        .mission-text
+        {
+            margin-top: 0;
+        }
+        .about-text
+        {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .hukumnama_box
+        {
+            padding: 30px 20px;
+        }
+        .jug_head
+        {
+            font-size: 26px !important;
+        }
+        .head_1
+        {
+            font-size: 26px !important;
+        }
+        .head_today
+        {
+            font-size: 39px !important;
+        }
+        .hukumnama_text
+        {
+            font-size: 19px !important;
+        }
+        .meaning_punjabi
+        {
+            font-size: 16px !important;
+        }
+        .meaning_english
+        {
+            font-size: 16px !important;
+        }
+    }
+    @media only screen and (max-width  : 575px)
+    {
+        .about-us-img {
+            margin-top: 0px;
+            width: 100%;
+        }
+    }
+    /* end media query section */
+
+
+    .navbar-nav .dropdown-menu {
+        background: rgba(255, 255, 255, 0.88) !important;
+
+    }
